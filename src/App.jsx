@@ -3,8 +3,8 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
-// import Quiz from "../pages/Quiz";
-// import AudioPlayer from "../components/AudioPlayer";
+import Quiz from "./pages/Quiz";
+import AudioPlayer from "./components/AudioPlayer";
 
 function AppContent() {
   const location = useLocation();
@@ -17,11 +17,11 @@ function AppContent() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          {/* <Route path="/quiz" element={<Quiz />} /> */}
+          <Route path="/quiz" element={<Quiz />} />
         </Routes>
       </main>
       {!isHomePage && <Footer />}
-      {/* <AudioPlayer /> */}
+      <AudioPlayer />
     </div>
   );
 }
