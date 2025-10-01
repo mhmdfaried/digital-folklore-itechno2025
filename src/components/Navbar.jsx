@@ -72,7 +72,7 @@ function Navbar() {
               onMouseEnter={() => handleMouseEnter('/')}
               onMouseLeave={handleMouseLeave}
             >
-              <span className="relative z-10 text-base font-montserrat font-bold">Home</span>
+              <span className="relative z-10 text-base font-montserrat font-bold">Beranda</span>
               
               {/* Active state - bottom border with glow */}
               {isActive('/') && hoveredLink !== '/' && (
@@ -103,7 +103,7 @@ function Navbar() {
               onMouseEnter={() => handleMouseEnter('/about')}
               onMouseLeave={handleMouseLeave}
             >
-              <span className="relative z-10 text-base font-montserrat font-bold">About</span>
+              <span className="relative z-10 text-base font-montserrat font-bold">Tentang Kami</span>
               
               {/* Active state - bottom border with glow */}
               {isActive('/about') && hoveredLink !== '/about' && (
@@ -134,7 +134,7 @@ function Navbar() {
               onMouseEnter={() => handleMouseEnter('/quiz')}
               onMouseLeave={handleMouseLeave}
             >
-              <span className="relative z-10 text-base font-montserrat font-bold">Get Started</span>
+              <span className="relative z-10 text-base font-montserrat font-bold">Mulai Menjelajah!</span>
 
               {/* Active state - bottom border with glow */}
               {isActive('/quiz') && hoveredLink !== '/quiz' && (

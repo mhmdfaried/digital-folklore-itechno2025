@@ -145,9 +145,9 @@ function Home() {
           >
             <Link
               to="/quiz"
-              className="group inline-block px-14 py-3 border-2 border-white text-white font-bold rounded-full hover:bg-black/40 transition-all duration-300 hover:scale-105 relative overflow-hidden"
+              className="group inline-block px-14 py-3 border-2 border-white text-white font-bold rounded-xl hover:bg-white/40 transition-all duration-300 hover:scale-105 relative overflow-hidden"
             >
-              <span className="relative z-10">Get Started</span>
+              <span className="relative z-10">Mulai Menjelajah!</span>
               <div className="absolute inset-0 bg-black/40 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
               <div className="absolute inset-0 bg-black/40"></div>
             </Link>
