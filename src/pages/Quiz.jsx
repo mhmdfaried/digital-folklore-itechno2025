@@ -84,7 +84,7 @@ const Quiz = () => {
       {/* Section 1 - Toba Lake */}
       <section 
         id="section-1"
-        className="quiz-section min-h-screen flex items-center justify-center lg:justify-end relative transition-all duration-1000 py-8 lg:py-0"
+        className="quiz-section min-h-screen flex items-center justify-center lg:justify-end relative transition-all duration-1000 pt-20 sm:pt-24 md:pt-28 lg:pt-20 xl:pt-0 py-8 lg:py-0"
       >
         {/* Background Image - Full Screen */}
         <div 
@@ -155,7 +155,7 @@ const Quiz = () => {
       {/* Section 2 - Fishing */}
       <section 
         id="section-2"
-        className="quiz-section min-h-screen flex items-center justify-center lg:justify-start relative transition-all duration-1000 py-8 lg:py-0"
+        className="quiz-section min-h-screen flex items-center justify-center lg:justify-start relative transition-all duration-1000 pt-20 sm:pt-24 md:pt-28 lg:pt-0 py-8 lg:py-0"
       >
         {/* Background Image - Full Screen */}
         <div 
@@ -226,7 +226,7 @@ const Quiz = () => {
       {/* Section 3 - Fish */}
       <section 
         id="section-3"
-        className="quiz-section min-h-screen flex items-center justify-center lg:justify-end relative transition-all duration-1000 py-8 lg:py-0"
+        className="quiz-section min-h-screen flex items-center justify-center lg:justify-end relative transition-all duration-1000 pt-20 sm:pt-24 md:pt-28 lg:pt-0 py-8 lg:py-0"
       >
         {/* Background Image - Full Screen */}
         <div 
@@ -296,7 +296,7 @@ const Quiz = () => {
       {/* Section 4 - Fish Talk */}
       <section 
         id="section-4"
-        className="quiz-section min-h-screen flex items-center justify-center lg:justify-start relative transition-all duration-1000 py-8 lg:py-0"
+        className="quiz-section min-h-screen flex items-center justify-center lg:justify-start relative transition-all duration-1000 pt-20 sm:pt-24 md:pt-28 lg:pt-0 py-8 lg:py-0"
       >
         {/* Background Image - Full Screen */}
         <div 
@@ -386,7 +386,7 @@ const Quiz = () => {
       {/* Section 5 - Princess */}
       <section 
         id="section-5"
-        className="quiz-section min-h-screen flex items-center justify-center lg:justify-end relative transition-all duration-1000 py-8 lg:py-0"
+        className="quiz-section min-h-screen flex items-center justify-center lg:justify-end relative transition-all duration-1000 pt-20 sm:pt-24 md:pt-28 lg:pt-0 py-8 lg:py-0"
       >
         {/* Background Image - Full Screen */}
         <div 
@@ -436,7 +436,7 @@ const Quiz = () => {
       {/* Section 6 - Family */}
       <section 
         id="section-6"
-        className="quiz-section min-h-screen flex items-center justify-center lg:justify-start relative transition-all duration-1000 py-8 lg:py-0"
+        className="quiz-section min-h-screen flex items-center justify-center lg:justify-start relative transition-all duration-1000 pt-20 sm:pt-24 md:pt-28 lg:pt-0 py-8 lg:py-0"
       >
         {/* Background Image - Full Screen */}
         <div 
@@ -487,7 +487,7 @@ const Quiz = () => {
       {/* Section 7 - Sinking */}
       <section 
         id="section-7"
-        className="quiz-section min-h-screen flex items-center justify-center lg:justify-end relative transition-all duration-1000 py-8 lg:py-0"
+        className="quiz-section min-h-screen flex items-center justify-center lg:justify-end relative transition-all duration-1000 pt-20 sm:pt-24 md:pt-28 lg:pt-0 py-8 lg:py-0"
       >
         {/* Background Image - Full Screen */}
         <div 
@@ -537,7 +537,7 @@ const Quiz = () => {
       {/* Section 8 - Final */}
       <section 
         id="section-8"
-        className="quiz-section min-h-screen bg-cover bg-center bg-no-repeat flex flex-col justify-end relative transition-all duration-1000 py-8 lg:py-0"
+        className="quiz-section min-h-screen bg-cover bg-center bg-no-repeat flex flex-col justify-end relative transition-all duration-1000 pt-20 sm:pt-24 md:pt-28 lg:pt-0 py-8 lg:py-0"
         style={{ backgroundImage: `url(${Quiz8})` }}
       >
         <div className="absolute inset-0 bg-black/10 transition-opacity duration-1000"></div>
