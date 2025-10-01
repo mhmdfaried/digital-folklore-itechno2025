@@ -89,7 +89,7 @@ function About() {
           </h1>
 
           <p
-            className={`text-[19px] italic font-medium font-montserrat text-white mb-8 max-w-3xl mx-auto leading-relaxed transition-all duration-1000 delay-300 drop-shadow-[0_5px_14px_rgba(0,0,0,0.75)] ${
+            className={`text-[19px] italic font-montserrat text-white mb-8 max-w-4xl mx-auto leading-relaxed transition-all duration-1000 delay-300 drop-shadow-[0_5px_14px_rgba(0,0,0,0.75)] ${
               isLoaded ? 'animate-fadeInUp opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
             }`}
           >
@@ -130,7 +130,7 @@ function About() {
 
       {/* Inspirational Quote Section */}
       <section 
-        className="py-28 px-6 relative my-12"
+        className="py-28 px-6 relative my-20"
         style={{
           backgroundImage: `url(${darkCompBg})`,
           backgroundSize: 'cover',
@@ -199,7 +199,7 @@ function About() {
             <h2 className="text-4xl font-bold text-white mb-4">
               Tim Pengembang
             </h2>
-            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+            <p className="text-xl text-white max-w-3xl mx-auto">
               Tim kreatif yang berdedikasi menciptakan pengalaman belajar yang luar biasa
             </p>
           </div>
