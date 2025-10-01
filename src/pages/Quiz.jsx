@@ -61,7 +61,7 @@ const Quiz = () => {
     const correct = correctAnswers[sectionId];
     
     if (!selected) {
-      return 'bg-white bg-opacity-50 hover:bg-gray-500 text-gray-200 border-2 border-transparent';
+      return 'bg-white/50 hover:bg-gray-500 text-gray-200 border-2 border-transparent';
     }
     
     if (option === correct) {
@@ -76,7 +76,7 @@ const Quiz = () => {
       return 'bg-green-500 border-2 border-green-400 text-white';
     }
     
-    return 'bg-white bg-opacity-30 text-gray-200 border-2 border-transparent opacity-50';
+    return 'bg-white/50 text-gray-200 border-2 border-transparent opacity-50';
   };
 
   return (
@@ -97,7 +97,7 @@ const Quiz = () => {
         
         {/* Content Box - Overlay Right Side */}
         <div className="relative z-10 w-1/2 mx-10 h-full flex items-center justify-center">
-          <div className={`bg-black bg-opacity-50 backdrop-blur-sm rounded-xl p-6 text-white transition-all duration-1000 transform w-full ${
+          <div className={`bg-black/30 backdrop-blur-sm rounded-xl p-6 text-white transition-all duration-1000 transform w-full ${
             visibleSections.has('section-1') ? 'animate-fadeInUp opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}>
             <h2 className="text-4xl md:text-3xl font-bold mb-4 text-white">
@@ -108,7 +108,7 @@ const Quiz = () => {
             </p>
             
             {/* Quiz Section */}
-            <div className="bg-white bg-opacity-50 rounded-xl p-2 border border-gray-600">
+            <div className="bg-white/30 rounded-xl p-2 border border-gray-600">
               <h3 className="text-xl font-bold italic text-white font-montserrat mb-2" style={{textShadow: '3px 3px 8px rgba(0,0,0,0.8), 1px 1px 3px rgba(0,0,0,0.9)'}}>Soal: Bantu Toba Bangun Rumah Sederhana</h3>
               <p className="text-lg mb-6 text-white font-montserrat" style={{textShadow: '2px 2px 6px rgba(0,0,0,0.7), 1px 1px 2px rgba(0,0,0,0.8)'}}>Toba sedang membangun rumah sederhana. Untuk membuat bagian utama rumah, tag apa yang sebaiknya digunakan?</p>
               
@@ -128,7 +128,7 @@ const Quiz = () => {
                 </div>
                 
                 {/* House Image - Right Side */}
-                <div className="w-1/2 bg-white bg-opacity-50 rounded-lg flex items-center justify-center relative overflow-hidden">
+                <div className="w-1/2 bg-white/50 rounded-lg flex items-center justify-center relative overflow-hidden">
                   {/* Gray Image - Disappears when correct */}
                   <img 
                     src={RumahImageGray} 
@@ -167,7 +167,7 @@ const Quiz = () => {
         
         {/* Content Box - Overlay Left Side */}
         <div className="relative z-10 w-1/2 mx-10 h-full flex items-center justify-center">
-          <div className={`bg-black bg-opacity-50 backdrop-blur-sm rounded-xl p-6 text-white transition-all duration-1000 transform w-full ${
+          <div className={`bg-black/30 backdrop-blur-sm rounded-xl p-6 text-white transition-all duration-1000 transform w-full ${
             visibleSections.has('section-2') ? 'animate-fadeInUp opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}>
             <h2 className="text-4xl md:text-3xl font-bold mb-4 text-white">
@@ -178,7 +178,7 @@ const Quiz = () => {
             </p>
             
             {/* Quiz Section */}
-            <div className="bg-white bg-opacity-50 rounded-xl p-2 border border-gray-600">
+            <div className="bg-white/30 rounded-xl p-2 border border-gray-600">
               <h3 className="text-xl font-bold italic text-white font-montserrat mb-2" style={{textShadow: '3px 3px 8px rgba(0,0,0,0.8), 1px 1px 3px rgba(0,0,0,0.9)'}}>Soal: Bantu Toba Siapkan Alat Pancing</h3>
               <p className="text-lg mb-6 text-white font-montserrat" style={{textShadow: '2px 2px 6px rgba(0,0,0,0.7), 1px 1px 2px rgba(0,0,0,0.8)'}}>Toba pergi ke sungai untuk memancing. Ia membawa kail, umpan, dan ember.
               Jika kita ingin menuliskan daftar alat pancing tersebut dalam HTML, elemen yang paling tepat digunakan adalah …</p>
@@ -199,7 +199,7 @@ const Quiz = () => {
                 </div>
                 
                 {/* Pancingan Image - Right Side */}
-                <div className="w-1/2 bg-white bg-opacity-50 rounded-lg flex items-center justify-center relative overflow-hidden">
+                <div className="w-1/2 bg-white/50 rounded-lg flex items-center justify-center relative overflow-hidden">
                   {/* Gray Image - Disappears when correct */}
                   <img 
                     src={PancinganImageGray} 
@@ -238,7 +238,7 @@ const Quiz = () => {
         
         {/* Content Box - Overlay Right Side */}
         <div className="relative z-10 w-1/2 mx-10 h-full flex items-center justify-center">
-          <div className={`bg-black bg-opacity-50 backdrop-blur-sm rounded-xl p-6 text-white transition-all duration-1000 transform w-full ${
+          <div className={`bg-black/30 backdrop-blur-sm rounded-xl p-6 text-white transition-all duration-1000 transform w-full ${
             visibleSections.has('section-3') ? 'animate-fadeInUp opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}>
             <h2 className="text-4xl md:text-3xl font-bold mb-4 text-white">
@@ -249,7 +249,7 @@ const Quiz = () => {
             </p>
             
             {/* Quiz Section */}
-            <div className="bg-white bg-opacity-50 rounded-xl p-2 border border-gray-600">
+            <div className="bg-white/30 rounded-xl p-2 border border-gray-600">
               <h3 className="text-xl font-bold italic text-white font-montserrat mb-2" style={{textShadow: '3px 3px 8px rgba(0,0,0,0.8), 1px 1px 3px rgba(0,0,0,0.9)'}}>Soal: Bantu Toba Memancing Ikan</h3>
               <p className="text-lg mb-6 text-white font-montserrat" style={{textShadow: '2px 2px 6px rgba(0,0,0,0.7), 1px 1px 2px rgba(0,0,0,0.8)'}}>Tag apa yang paling tepat untuk menampilkan gambar ikan mas?</p>
               
@@ -269,7 +269,7 @@ const Quiz = () => {
                 </div>
                 
                 {/* Image Container - Right Side */}
-                <div className="w-1/2 bg-white bg-opacity-50 rounded-lg flex items-center justify-center relative overflow-hidden">
+                <div className="w-1/2 bg-white/50 rounded-lg flex items-center justify-center relative overflow-hidden">
                   {/* Ombak Image - Always visible, zoomed out */}
                   <img 
                     src={OmbakImage} 
@@ -280,7 +280,7 @@ const Quiz = () => {
                   <img 
                     src={IkanMasImage} 
                     alt="Ikan Mas" 
-                    className={`w-full h-full max-h-[280px] object-contain rounded-lg absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-all duration-1000 ${
+                    className={`w-full h-full max-h-[280px] object-contain rounded-lg absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-all duration-1000 ${
                       selectedAnswers['section-3'] === correctAnswers['section-3'] 
                         ? 'opacity-100 translate-y-0' 
                         : 'opacity-0 translate-y-full'
@@ -309,7 +309,7 @@ const Quiz = () => {
         
         {/* Content Box - Overlay Left Side */}
         <div className="relative z-10 w-1/2 mx-10 h-full flex items-center justify-center">
-          <div className={`bg-black bg-opacity-50 backdrop-blur-sm rounded-xl p-6 text-white transition-all duration-1000 transform w-full ${
+          <div className={`bg-black/30 backdrop-blur-sm rounded-xl p-6 text-white transition-all duration-1000 transform w-full ${
             visibleSections.has('section-4') ? 'animate-fadeInUp opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}>
             <h2 className="text-4xl md:text-3xl font-bold mb-4 text-white">
@@ -320,7 +320,7 @@ const Quiz = () => {
             </p>
             
             {/* Quiz Section */}
-            <div className="bg-white bg-opacity-50 rounded-xl p-2 border border-gray-600">
+            <div className="bg-white/30 rounded-xl p-2 border border-gray-600">
               <h3 className="text-xl font-bold italic text-white font-montserrat mb-2" style={{textShadow: '3px 3px 8px rgba(0,0,0,0.8), 1px 1px 3px rgba(0,0,0,0.9)'}}>Soal: Bantu Toba Kembalikan Ikan dengan CSS</h3>
               <p className="text-lg mb-6 text-white font-montserrat" style={{textShadow: '2px 2px 6px rgba(0,0,0,0.7), 1px 1px 2px rgba(0,0,0,0.8)'}}>Lengkapilah kode CSS berikut agar elemen ikan (.fish) berada di dalam sungai (.river), tepat di tengah horizontal dan dekat bagian bawah air.</p>
               
@@ -345,7 +345,7 @@ const Quiz = () => {
                 </div>
                 
                 {/* Visual Representation - Right Side */}
-                <div className="w-1/2 bg-white bg-opacity-50 rounded-lg flex items-center justify-center relative overflow-hidden">
+                <div className="w-1/2 bg-white/50 rounded-lg flex items-center justify-center relative overflow-hidden">
                   {/* Ombak Image - Always visible, zoomed out */}
                   <img 
                     src={OmbakImage} 
@@ -398,7 +398,7 @@ const Quiz = () => {
         
         {/* Content Box - Overlay Right Side */}
         <div className="relative z-10 w-1/2 mx-10 h-full flex items-center justify-center">
-          <div className={`bg-black bg-opacity-50 backdrop-blur-sm rounded-xl p-6 text-white transition-all duration-1000 transform w-full ${
+          <div className={`bg-black/30 backdrop-blur-sm rounded-xl p-6 text-white transition-all duration-1000 transform w-full ${
             visibleSections.has('section-5') ? 'animate-fadeInUp opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}>
             <h2 className="text-4xl md:text-3xl font-bold mb-4 text-white">
@@ -409,7 +409,7 @@ const Quiz = () => {
             </p>
             
             {/* Quiz Section */}
-            <div className="bg-white bg-opacity-50 rounded-xl p-2 border border-gray-600">
+            <div className="bg-white/30 rounded-xl p-2 border border-gray-600">
               <h3 className="text-xl font-bold italic text-white font-montserrat mb-2" style={{textShadow: '3px 3px 8px rgba(0,0,0,0.8), 1px 1px 3px rgba(0,0,0,0.9)'}}>Soal: Formulir Pernikahan</h3>
               <p className="text-lg mb-6 text-white font-montserrat" style={{textShadow: '2px 2px 6px rgba(0,0,0,0.7), 1px 1px 2px rgba(0,0,0,0.8)'}}>Tag HTML apa yang digunakan untuk membuat formulir tempat Toba menuliskan janjinya?</p>
               
@@ -449,7 +449,7 @@ const Quiz = () => {
         
         {/* Content Box - Overlay Left Side */}
         <div className="relative z-10 w-1/2 mx-10 h-full flex items-center justify-center">
-          <div className={`bg-black bg-opacity-50 backdrop-blur-sm rounded-xl p-6 text-white transition-all duration-1000 transform w-full ${
+          <div className={`bg-black/30 backdrop-blur-sm rounded-xl p-6 text-white transition-all duration-1000 transform w-full ${
             visibleSections.has('section-6') ? 'animate-fadeInUp opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}>
             <h2 className="text-4xl md:text-3xl font-bold mb-4 text-white">
@@ -460,7 +460,7 @@ const Quiz = () => {
             </p>
             
             {/* Quiz Section */}
-            <div className="bg-white bg-opacity-50 rounded-xl p-2 border border-gray-600">
+            <div className="bg-white/30 rounded-xl p-2 border border-gray-600">
               <h3 className="text-xl font-bold italic text-white font-montserrat mb-2" style={{textShadow: '3px 3px 8px rgba(0,0,0,0.8), 1px 1px 3px rgba(0,0,0,0.9)'}}>Soal: Bantu Samosir Atur Lapar dengan JS</h3>
               <p className="text-lg mb-6 text-white font-montserrat" style={{textShadow: '2px 2px 6px rgba(0,0,0,0.7), 1px 1px 2px rgba(0,0,0,0.8)'}}>Jika setInterval() digunakan untuk membuat Samosir selalu lapar, maka fungsi JavaScript apa yang digunakan untuk menahan lapar (menghentikan interval)?</p>
               
@@ -499,7 +499,7 @@ const Quiz = () => {
         
         {/* Content Box - Overlay Right Side */}
         <div className="relative z-10 w-1/2 mx-10 h-full flex items-center justify-center">
-          <div className={`bg-black bg-opacity-50 backdrop-blur-sm rounded-xl p-6 text-white transition-all duration-1000 transform w-full ${
+          <div className={`bg-black/30 backdrop-blur-sm rounded-xl p-6 text-white transition-all duration-1000 transform w-full ${
             visibleSections.has('section-7') ? 'animate-fadeInUp opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}>
             <h2 className="text-4xl md:text-3xl font-bold mb-4 text-white">
@@ -510,7 +510,7 @@ const Quiz = () => {
             </p>
             
             {/* Quiz Section */}
-            <div className="bg-white bg-opacity-50 rounded-xl p-2 border border-gray-600">
+            <div className="bg-white/30 rounded-xl p-2 border border-gray-600">
               <h3 className="text-xl font-bold italic text-white font-montserrat mb-2" style={{textShadow: '3px 3px 8px rgba(0,0,0,0.8), 1px 1px 3px rgba(0,0,0,0.9)'}}>Soal: Event Handling dalam HTML</h3>
               <p className="text-lg mb-6 text-white font-montserrat" style={{textShadow: '2px 2px 6px rgba(0,0,0,0.7), 1px 1px 2px rgba(0,0,0,0.8)'}}>Ketika air menyembur dan membuat Danau Toba, kita ingin membuat sebuah peristiwa (event) di halaman web untuk menanganinya. Atribut HTML apa yang tepat digunakan untuk menangani sebuah klik (misalnya, saat pengguna menekan tombol "Tenggelam")?</p>
               
@@ -540,7 +540,7 @@ const Quiz = () => {
         className="quiz-section h-screen bg-cover bg-center bg-no-repeat flex flex-col justify-end relative transition-all duration-1000"
         style={{ backgroundImage: `url(${Quiz8})` }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-20 transition-opacity duration-1000"></div>
+        <div className="absolute inset-0 bg-black/10 transition-opacity duration-1000"></div>
         <div className="relative z-10 p-8 pb-16">
           <div className="max-w-10xl mx-auto">
             <div className={` rounded-2xl text-white transition-all duration-1000 transform ${
@@ -551,11 +551,12 @@ const Quiz = () => {
                 </p>
               <div className="mt-8 text-center">
                 <Link
-                  to="/"
-                  className="inline-block px-8 py-4 border-2 border-cyan-400 text-cyan-400 font-bold rounded-full hover:bg-cyan-400/10 transition-all duration-300 hover:scale-105 relative overflow-hidden group"
-                >
-                  <span className="relative z-10">Kembali ke Beranda</span>
-                  <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/20 to-blue-400/20 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+                    to="/"
+                    className="group inline-block px-14 py-3 border-2 border-white text-white font-bold rounded-xl hover:bg-white/40 transition-all duration-300 hover:scale-105 relative overflow-hidden"
+                    >
+                    <span className="relative z-10">Kembali ke Beranda</span>
+                    <div className="absolute inset-0 bg-black/40 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+                    <div className="absolute inset-0 bg-black/40"></div>
                 </Link>
               </div>
             </div>
