@@ -131,11 +131,14 @@ function Home() {
           </h1>
 
           <p
-            className={`text-[19px] italic font-medium font-montserrat text-white mb-8 max-w-3xl mx-auto leading-relaxed transition-all duration-1000 delay-300 drop-shadow-[0_5px_14px_rgba(0,0,0,0.75)] ${
+            className={`text-[19px] italic font-montserrat text-white mb-12 max-w-5xl mx-auto leading-relaxed transition-all duration-1000 delay-300 drop-shadow-[0_5px_14px_rgba(0,0,0,0.75)] ${
               isLoaded ? 'animate-fadeInUp opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
             }`}
+            style={{
+              textShadow: '0px 6px 18px rgba(0, 0, 0, 0.7)'
+            }}
           >
-            Jelajahi Legenda Danau Toba sambil belajar coding untuk selamatkan alam Indonesia!
+            Jelajahi Legenda Danau Toba sambil belajar coding untuk menjaga warisan budaya Indonesia!
           </p>
 
           <div 
@@ -145,11 +148,13 @@ function Home() {
           >
             <Link
               to="/quiz"
-              className="group inline-block px-14 py-3 border-2 border-white text-white font-bold rounded-xl hover:bg-white/40 transition-all duration-300 hover:scale-105 relative overflow-hidden"
+              className="relative group px-8 py-4 font-mono text-sm font-medium transition-all duration-300 rounded-xl border-2 text-gray-300 border-white/40 bg-black/20 hover:text-purple-200 hover:border-purple-400/80"
             >
-              <span className="relative z-10">Mulai Menjelajah!</span>
-              <div className="absolute inset-0 bg-black/40 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
-              <div className="absolute inset-0 bg-black/40"></div>
+              <span className="relative z-10 text-base font-montserrat font-bold">Mulai Menjelajah!</span>
+              
+              {/* Hover state - glow box */}
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-500/30 to-purple-400/30 rounded-xl border-2 border-purple-400/60 shadow-lg shadow-purple-500/25 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-500/15 to-purple-400/15 rounded-xl blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </Link>
           </div>
         </div>
