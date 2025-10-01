@@ -1,6 +1,6 @@
-import logo from "../../public/assets/img/Logo/logo-image.png";
-import digitalfolklore from "../../public/assets/img/Logo/digital-floklore.png";
-import logopnj from "../../public/assets/img/Logo/logo-pnj.png";
+import logo from "../assets/img/Logo/logo-image.png";
+import digitalfolklore from "../assets/img/Logo/digital-floklore.png";
+import logopnj from "../assets/img/Logo/logo-pnj.png";
 
 
 function Footer() {

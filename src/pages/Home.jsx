@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import BgHome from '../../public/assets/img/Background/landing-image.jpg';
+import BgHome from '../assets/img/Background/landing-image.jpg';
 
 function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
