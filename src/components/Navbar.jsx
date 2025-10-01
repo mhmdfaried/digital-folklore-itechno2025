@@ -64,7 +64,7 @@ function Navbar() {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled 
-        ? 'bg-gray-900/20 backdrop-blur shadow-lg shadow-white/20' 
+        ? 'bg-gray-900/20 lg:backdrop-blur shadow-lg shadow-white/20' 
         : 'bg-transparent'
     }`}>
       <div className="container mx-auto px-8 py-1">
@@ -87,7 +87,7 @@ function Navbar() {
           </Link>
 
           {/* Navigation Links */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-8">
             <Link
               to="/"
               className={`relative group px-6 py-3 font-mono text-sm font-medium transition-all duration-300 rounded-xl ${
@@ -189,7 +189,7 @@ function Navbar() {
           </div> */}
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button 
               onClick={toggleMobileMenu}
               className="p-2 text-gray-300 hover:text-purple-400 transition-colors duration-300"
@@ -212,7 +212,7 @@ function Navbar() {
         </div>
 
         {/* Mobile Menu */}
-        <div className={`md:hidden transition-all duration-300 ease-in-out ${
+        <div className={`lg:hidden transition-all duration-300 ease-in-out ${
           isMobileMenuOpen 
             ? 'max-h-96 opacity-100' 
             : 'max-h-0 opacity-0 overflow-hidden'
