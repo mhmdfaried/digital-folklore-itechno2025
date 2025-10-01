@@ -72,9 +72,6 @@ function Navbar() {
           {/* Logo */}
           <Link to="/" className="group flex items-center">
             <div className="w-20 h-20 pt-1.5 flex items-center justify-center">
-              {/* <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-              </svg> */}
               <img 
                 src={logo}
                 alt="icon" 
@@ -82,10 +79,10 @@ function Navbar() {
               />
             </div>
             <div>
-              <span className="text-20px font-bold font-montserrat italic bg-white bg-clip-text text-transparent group-hover:from-cyan-300 group-hover:to-purple-300 transition-all duration-300">
+              <span className="text-20px font-bold font-montserrat italic bg-white bg-clip-text text-transparent group-hover:from-purple-300 group-hover:to-purple-300 transition-all duration-300">
                 Didingcode &nbsp;
               </span>
-              <div className="text-20px font-bold font-montserrat italic bg-white bg-clip-text text-transparent group-hover:from-cyan-300 group-hover:to-purple-300 transition-all duration-300">Technology</div>
+              <div className="text-20px font-bold font-montserrat italic bg-white bg-clip-text text-transparent group-hover:from-purple-300 group-hover:to-purple-300 transition-all duration-300">Technology</div>
             </div>
           </Link>
 
@@ -95,9 +92,9 @@ function Navbar() {
               to="/"
               className={`relative group px-6 py-3 font-mono text-sm font-medium transition-all duration-300 rounded-xl ${
                 isActive('/') && hoveredLink !== '/' 
-                  ? 'text-cyan-300' 
+                  ? 'text-purple-300' 
                   : hoveredLink === '/'
-                  ? 'text-cyan-200'
+                  ? 'text-purple-200'
                   : 'text-gray-300'
               }`}
               onMouseEnter={() => handleMouseEnter('/')}
@@ -108,16 +105,16 @@ function Navbar() {
               {/* Active state - bottom border with glow */}
               {isActive('/') && hoveredLink !== '/' && (
                 <>
-                  <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-8 h-0.5 bg-gradient-to-r from-cyan-400 to-cyan-300 rounded-full"></div>
-                  <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-8 h-0.5 bg-cyan-400/50 rounded-full blur-sm"></div>
+                  <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-8 h-0.5 bg-gradient-to-r from-purple-400 to-purple-300 rounded-full"></div>
+                  <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-8 h-0.5 bg-purple-400/50 rounded-full blur-sm"></div>
                 </>
               )}
               
               {/* Hover state - glow box */}
               {hoveredLink === '/' && (
                 <>
-                  <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-cyan-400/20 rounded-xl border border-cyan-400/30 shadow-lg shadow-cyan-500/25"></div>
-                  <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 to-cyan-400/10 rounded-xl blur-sm"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-purple-400/20 rounded-xl border border-purple-400/30 shadow-lg shadow-purple-500/25"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-purple-400/10 rounded-xl blur-sm"></div>
                 </>
               )}
             </Link>
@@ -195,7 +192,7 @@ function Navbar() {
           <div className="md:hidden">
             <button 
               onClick={toggleMobileMenu}
-              className="p-2 text-gray-300 hover:text-cyan-400 transition-colors duration-300"
+              className="p-2 text-gray-300 hover:text-purple-400 transition-colors duration-300"
               aria-label="Toggle mobile menu"
             >
               <svg 
@@ -220,14 +217,14 @@ function Navbar() {
             ? 'max-h-96 opacity-100' 
             : 'max-h-0 opacity-0 overflow-hidden'
         }`}>
-          <div className="px-8 py-4 space-y-4 bg-gray-900/30 backdrop-blur border-t border-white/10">
+          <div className="px-8 py-4 space-y-4 bg-gray-900/30 backdrop-blur rounded-xl border-t border-white/10">
             <Link
               to="/"
               onClick={closeMobileMenu}
               className={`block px-4 py-3 text-base font-montserrat font-bold rounded-xl transition-all duration-300 ${
                 isActive('/') 
-                  ? 'text-cyan-300 bg-cyan-500/20 border border-cyan-400/30' 
-                  : 'text-gray-300 hover:text-cyan-200 hover:bg-cyan-500/10'
+                  ? 'text-purple-300 bg-purple-500/20 border border-purple-400/30' 
+                  : 'text-gray-300 hover:text-purple-200 hover:bg-purple-500/10'
               }`}
             >
               Beranda
