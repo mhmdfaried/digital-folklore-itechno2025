@@ -199,7 +199,7 @@ function About() {
             <h2 className="text-4xl font-bold text-white mb-4">
               Tim Pengembang
             </h2>
-            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+            <p className="text-xl text-white max-w-3xl mx-auto">
               Tim kreatif yang berdedikasi menciptakan pengalaman belajar yang luar biasa
             </p>
           </div>
