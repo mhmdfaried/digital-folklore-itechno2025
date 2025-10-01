@@ -84,7 +84,7 @@ const Quiz = () => {
       {/* Section 1 - Toba Lake */}
       <section 
         id="section-1"
-        className="quiz-section h-screen flex items-center justify-end relative transition-all duration-1000"
+        className="quiz-section min-h-screen flex items-center justify-center lg:justify-end relative transition-all duration-1000 py-8 lg:py-0"
       >
         {/* Background Image - Full Screen */}
         <div 
@@ -95,31 +95,31 @@ const Quiz = () => {
           }}
         ></div>
         
-        {/* Content Box - Overlay Right Side */}
-        <div className="relative z-10 w-1/2 mx-10 h-full flex items-center justify-center">
-          <div className={`bg-black/30 backdrop-blur-sm rounded-xl p-6 text-white transition-all duration-1000 transform w-full ${
+        {/* Content Box - Responsive Overlay */}
+        <div className="relative z-10 w-full lg:w-1/2 mx-4 lg:mx-10 h-full flex items-center justify-center px-4 lg:px-0">
+          <div className={`bg-black/30 backdrop-blur-sm rounded-xl p-4 lg:p-6 text-white transition-all duration-1000 transform w-full max-w-4xl ${
             visibleSections.has('section-1') ? 'animate-fadeInUp opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}>
-            <h2 className="text-4xl md:text-3xl font-bold mb-4 text-white">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 lg:mb-4 text-white">
               Pengenalan Toba sebagai Petani Sendiri
             </h2>
-            <p className="text-lg md:text-xl mb-10 leading-relaxed text-white">
+            <p className="text-sm sm:text-base lg:text-lg xl:text-xl mb-6 lg:mb-10 leading-relaxed text-white">
               Pada zaman dahulu, di sebuah desa di Sumatera Utara, hiduplah seorang petani bernama Toba. Ia hidup sendiri sebatang kara, setiap hari bekerja menggarap ladang dan mencari ikan untuk memenuhi kebutuhannya sehari-hari.
             </p>
             
             {/* Quiz Section */}
-            <div className="bg-white/30 rounded-xl p-2 border border-gray-600">
-              <h3 className="text-xl font-bold italic text-white font-montserrat mb-2" style={{textShadow: '3px 3px 8px rgba(0,0,0,0.8), 1px 1px 3px rgba(0,0,0,0.9)'}}>Soal: Bantu Toba Bangun Rumah Sederhana</h3>
-              <p className="text-lg mb-6 text-white font-montserrat" style={{textShadow: '2px 2px 6px rgba(0,0,0,0.7), 1px 1px 2px rgba(0,0,0,0.8)'}}>Toba sedang membangun rumah sederhana. Untuk membuat bagian utama rumah, tag apa yang sebaiknya digunakan?</p>
+            <div className="bg-white/30 rounded-xl p-3 lg:p-4 border border-gray-600">
+              <h3 className="text-lg lg:text-xl font-bold italic text-white font-montserrat mb-2" style={{textShadow: '3px 3px 8px rgba(0,0,0,0.8), 1px 1px 3px rgba(0,0,0,0.9)'}}>Soal: Bantu Toba Bangun Rumah Sederhana</h3>
+              <p className="text-sm sm:text-base lg:text-lg mb-4 lg:mb-6 text-white font-montserrat" style={{textShadow: '2px 2px 6px rgba(0,0,0,0.7), 1px 1px 2px rgba(0,0,0,0.8)'}}>Toba sedang membangun rumah sederhana. Untuk membuat bagian utama rumah, tag apa yang sebaiknya digunakan?</p>
               
-              <div className="flex gap-6 items-stretch">
-                {/* Answer Options - Left Side */}
-                <div className="w-1/2 space-y-7">
+              <div className="flex flex-col lg:flex-row gap-4 lg:gap-6 items-stretch">
+                {/* Answer Options - Mobile: Full Width, Desktop: Left Side */}
+                <div className="w-full lg:w-1/2 space-y-4 lg:space-y-7">
                   {['<div>', '<section>', '<p>'].map((option, index) => (
                     <button 
                       key={index}
                       onClick={() => handleAnswerSelect('section-1', option)}
-                      className={`w-full font-medium py-6 rounded-lg text-center transition-all duration-300 transform hover:scale-105 hover:shadow-lg ${getAnswerButtonStyle('section-1', option)}`}
+                      className={`w-full font-medium py-4 lg:py-6 rounded-lg text-center transition-all duration-300 transform hover:scale-105 hover:shadow-lg text-sm lg:text-base ${getAnswerButtonStyle('section-1', option)}`}
                       style={{textShadow: '2px 2px 6px rgba(0,0,0,0.7), 1px 1px 2px rgba(0,0,0,0.8)'}}
                     >
                       {option}
@@ -127,8 +127,8 @@ const Quiz = () => {
                   ))}
                 </div>
                 
-                {/* House Image - Right Side */}
-                <div className="w-1/2 bg-white/50 rounded-lg flex items-center justify-center relative overflow-hidden">
+                {/* House Image - Mobile: Below Options, Desktop: Right Side */}
+                <div className="w-full lg:w-1/2 bg-white/50 rounded-lg flex items-center justify-center relative overflow-hidden h-48 lg:h-auto">
                   {/* Gray Image - Disappears when correct */}
                   <img 
                     src={RumahImageGray} 
@@ -155,7 +155,7 @@ const Quiz = () => {
       {/* Section 2 - Fishing */}
       <section 
         id="section-2"
-        className="quiz-section h-screen flex items-center justify-start relative transition-all duration-1000"
+        className="quiz-section min-h-screen flex items-center justify-center lg:justify-start relative transition-all duration-1000 py-8 lg:py-0"
       >
         {/* Background Image - Full Screen */}
         <div 
@@ -165,32 +165,32 @@ const Quiz = () => {
           }}
         ></div>
         
-        {/* Content Box - Overlay Left Side */}
-        <div className="relative z-10 w-1/2 mx-10 h-full flex items-center justify-center">
-          <div className={`bg-black/30 backdrop-blur-sm rounded-xl p-6 text-white transition-all duration-1000 transform w-full ${
+        {/* Content Box - Responsive Overlay */}
+        <div className="relative z-10 w-full lg:w-1/2 mx-4 lg:mx-10 h-full flex items-center justify-center px-4 lg:px-0">
+          <div className={`bg-black/30 backdrop-blur-sm rounded-xl p-4 lg:p-6 text-white transition-all duration-1000 transform w-full max-w-4xl ${
             visibleSections.has('section-2') ? 'animate-fadeInUp opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}>
-            <h2 className="text-4xl md:text-3xl font-bold mb-4 text-white">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 lg:mb-4 text-white">
               Toba Pergi ke Sungai
             </h2>
-            <p className="text-lg md:text-xl mb-10 leading-relaxed text-white">
+            <p className="text-sm sm:text-base lg:text-lg xl:text-xl mb-6 lg:mb-10 leading-relaxed text-white">
               Pada suatu hari, Toba pergi ke sungai di dekat rumahnya, ia bermaksud mencari ikan untuk lauknya hari ini. Dengan hanya berbekal sebuah kail, umpan, dan tempat ikan, ia pun langsung menuju ke sungai.
             </p>
             
             {/* Quiz Section */}
-            <div className="bg-white/30 rounded-xl p-2 border border-gray-600">
-              <h3 className="text-xl font-bold italic text-white font-montserrat mb-2" style={{textShadow: '3px 3px 8px rgba(0,0,0,0.8), 1px 1px 3px rgba(0,0,0,0.9)'}}>Soal: Bantu Toba Siapkan Alat Pancing</h3>
-              <p className="text-lg mb-6 text-white font-montserrat" style={{textShadow: '2px 2px 6px rgba(0,0,0,0.7), 1px 1px 2px rgba(0,0,0,0.8)'}}>Toba pergi ke sungai untuk memancing. Ia membawa kail, umpan, dan ember.
+            <div className="bg-white/30 rounded-xl p-3 lg:p-4 border border-gray-600">
+              <h3 className="text-lg lg:text-xl font-bold italic text-white font-montserrat mb-2" style={{textShadow: '3px 3px 8px rgba(0,0,0,0.8), 1px 1px 3px rgba(0,0,0,0.9)'}}>Soal: Bantu Toba Siapkan Alat Pancing</h3>
+              <p className="text-sm sm:text-base lg:text-lg mb-4 lg:mb-6 text-white font-montserrat" style={{textShadow: '2px 2px 6px rgba(0,0,0,0.7), 1px 1px 2px rgba(0,0,0,0.8)'}}>Toba pergi ke sungai untuk memancing. Ia membawa kail, umpan, dan ember.
               Jika kita ingin menuliskan daftar alat pancing tersebut dalam HTML, elemen yang paling tepat digunakan adalah …</p>
               
-              <div className="flex gap-6 items-stretch">
-                {/* Answer Options - Left Side */}
-                <div className="w-1/2 space-y-7">
+              <div className="flex flex-col lg:flex-row gap-4 lg:gap-6 items-stretch">
+                {/* Answer Options - Mobile: Full Width, Desktop: Left Side */}
+                <div className="w-full lg:w-1/2 space-y-4 lg:space-y-7">
                   {['<ul>', '<aside>', '<p>'].map((option, index) => (
                     <button 
                       key={index}
                       onClick={() => handleAnswerSelect('section-2', option)}
-                      className={`w-full font-medium py-6 rounded-lg text-center transition-all duration-300 transform hover:scale-105 hover:shadow-lg ${getAnswerButtonStyle('section-2', option)}`}
+                      className={`w-full font-medium py-4 lg:py-6 rounded-lg text-center transition-all duration-300 transform hover:scale-105 hover:shadow-lg text-sm lg:text-base ${getAnswerButtonStyle('section-2', option)}`}
                       style={{textShadow: '2px 2px 6px rgba(0,0,0,0.7), 1px 1px 2px rgba(0,0,0,0.8)'}}
                     >
                       {option}
@@ -198,8 +198,8 @@ const Quiz = () => {
                   ))}
                 </div>
                 
-                {/* Pancingan Image - Right Side */}
-                <div className="w-1/2 bg-white/50 rounded-lg flex items-center justify-center relative overflow-hidden">
+                {/* Pancingan Image - Mobile: Below Options, Desktop: Right Side */}
+                <div className="w-full lg:w-1/2 bg-white/50 rounded-lg flex items-center justify-center relative overflow-hidden h-48 lg:h-auto">
                   {/* Gray Image - Disappears when correct */}
                   <img 
                     src={PancinganImageGray} 
@@ -226,7 +226,7 @@ const Quiz = () => {
       {/* Section 3 - Fish */}
       <section 
         id="section-3"
-        className="quiz-section h-screen flex items-center justify-end relative transition-all duration-1000"
+        className="quiz-section min-h-screen flex items-center justify-center lg:justify-end relative transition-all duration-1000 py-8 lg:py-0"
       >
         {/* Background Image - Full Screen */}
         <div 
@@ -236,31 +236,31 @@ const Quiz = () => {
           }}
         ></div>
         
-        {/* Content Box - Overlay Right Side */}
-        <div className="relative z-10 w-1/2 mx-10 h-full flex items-center justify-center">
-          <div className={`bg-black/30 backdrop-blur-sm rounded-xl p-6 text-white transition-all duration-1000 transform w-full ${
+        {/* Content Box - Responsive Overlay */}
+        <div className="relative z-10 w-full lg:w-1/2 mx-4 lg:mx-10 h-full flex items-center justify-center px-4 lg:px-0">
+          <div className={`bg-black/30 backdrop-blur-sm rounded-xl p-4 lg:p-6 text-white transition-all duration-1000 transform w-full max-w-4xl ${
             visibleSections.has('section-3') ? 'animate-fadeInUp opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}>
-            <h2 className="text-4xl md:text-3xl font-bold mb-4 text-white">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 lg:mb-4 text-white">
               Menangkap Ikan Besar
             </h2>
-            <p className="text-lg md:text-xl mb-10 leading-relaxed text-white">
+            <p className="text-sm sm:text-base lg:text-lg xl:text-xl mb-6 lg:mb-10 leading-relaxed text-white">
               Setelah sesampainya di sungai, petani tersebut langsung melemparkan kailnya. Sambil menunggu kailnya dimakan ikan, Toba berdoa, "Ya Tuhan, semoga aku dapat ikan banyak hari ini."Beberapa saat kemudian, kail yang telah dilemparkannya terlihat bergoyang-goyang. Ia segera menarik kailnya. Petani tersebut sangat senang karena ternyata ikan yang didapatkannya kali ini sangat besar.
             </p>
             
             {/* Quiz Section */}
-            <div className="bg-white/30 rounded-xl p-2 border border-gray-600">
-              <h3 className="text-xl font-bold italic text-white font-montserrat mb-2" style={{textShadow: '3px 3px 8px rgba(0,0,0,0.8), 1px 1px 3px rgba(0,0,0,0.9)'}}>Soal: Bantu Toba Memancing Ikan</h3>
-              <p className="text-lg mb-6 text-white font-montserrat" style={{textShadow: '2px 2px 6px rgba(0,0,0,0.7), 1px 1px 2px rgba(0,0,0,0.8)'}}>Tag apa yang paling tepat untuk menampilkan gambar ikan mas?</p>
+            <div className="bg-white/30 rounded-xl p-3 lg:p-4 border border-gray-600">
+              <h3 className="text-lg lg:text-xl font-bold italic text-white font-montserrat mb-2" style={{textShadow: '3px 3px 8px rgba(0,0,0,0.8), 1px 1px 3px rgba(0,0,0,0.9)'}}>Soal: Bantu Toba Memancing Ikan</h3>
+              <p className="text-sm sm:text-base lg:text-lg mb-4 lg:mb-6 text-white font-montserrat" style={{textShadow: '2px 2px 6px rgba(0,0,0,0.7), 1px 1px 2px rgba(0,0,0,0.8)'}}>Tag apa yang paling tepat untuk menampilkan gambar ikan mas?</p>
               
-              <div className="flex gap-6 items-stretch">
-                {/* Answer Options - Left Side */}
-                <div className="w-1/2 space-y-7">
+              <div className="flex flex-col lg:flex-row gap-4 lg:gap-6 items-stretch">
+                {/* Answer Options - Mobile: Full Width, Desktop: Left Side */}
+                <div className="w-full lg:w-1/2 space-y-4 lg:space-y-7">
                   {['<img>', '<picture>', '<figure>'].map((option, index) => (
                     <button 
                       key={index}
                       onClick={() => handleAnswerSelect('section-3', option)}
-                      className={`w-full font-medium py-6 rounded-lg text-center transition-all duration-300 transform hover:scale-105 hover:shadow-lg ${getAnswerButtonStyle('section-3', option)}`}
+                      className={`w-full font-medium py-4 lg:py-6 rounded-lg text-center transition-all duration-300 transform hover:scale-105 hover:shadow-lg text-sm lg:text-base ${getAnswerButtonStyle('section-3', option)}`}
                       style={{textShadow: '2px 2px 6px rgba(0,0,0,0.7), 1px 1px 2px rgba(0,0,0,0.8)'}}
                     >
                       {option}
@@ -268,8 +268,8 @@ const Quiz = () => {
                   ))}
                 </div>
                 
-                {/* Image Container - Right Side */}
-                <div className="w-1/2 bg-white/50 rounded-lg flex items-center justify-center relative overflow-hidden">
+                {/* Image Container - Mobile: Below Options, Desktop: Right Side */}
+                <div className="w-full lg:w-1/2 bg-white/50 rounded-lg flex items-center justify-center relative overflow-hidden h-48 lg:h-auto">
                   {/* Ombak Image - Always visible, zoomed out */}
                   <img 
                     src={OmbakImage} 
@@ -296,7 +296,7 @@ const Quiz = () => {
       {/* Section 4 - Fish Talk */}
       <section 
         id="section-4"
-        className="quiz-section h-screen flex items-center justify-start relative transition-all duration-1000"
+        className="quiz-section min-h-screen flex items-center justify-center lg:justify-start relative transition-all duration-1000 py-8 lg:py-0"
       >
         {/* Background Image - Full Screen */}
         <div 
@@ -307,28 +307,28 @@ const Quiz = () => {
           }}
         ></div>
         
-        {/* Content Box - Overlay Left Side */}
-        <div className="relative z-10 w-1/2 mx-10 h-full flex items-center justify-center">
-          <div className={`bg-black/30 backdrop-blur-sm rounded-xl p-6 text-white transition-all duration-1000 transform w-full ${
+        {/* Content Box - Responsive Overlay */}
+        <div className="relative z-10 w-full lg:w-1/2 mx-4 lg:mx-10 h-full flex items-center justify-center px-4 lg:px-0">
+          <div className={`bg-black/30 backdrop-blur-sm rounded-xl p-4 lg:p-6 text-white transition-all duration-1000 transform w-full max-w-4xl ${
             visibleSections.has('section-4') ? 'animate-fadeInUp opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}>
-            <h2 className="text-4xl md:text-3xl font-bold mb-4 text-white">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 lg:mb-4 text-white">
               Toba Pergi ke Sungai
             </h2>
-            <p className="text-lg md:text-xl mb-10 leading-relaxed text-white">
+            <p className="text-sm sm:text-base lg:text-lg xl:text-xl mb-6 lg:mb-10 leading-relaxed text-white">
               Setelah beberapa saat memandangi ikan hasil tangkapannya, Toba sangat terkejut. Ternyata ikan yang ditangkapnya itu bisa berbicara! "Tolong aku jangan dimakan Pak, biarkan aku hidup", ucap ikan itu. Tanpa banyak tanya, ikan tangkapannya itu langsung dikembalikan ke dalam sungai kembali.
             </p>
             
             {/* Quiz Section */}
-            <div className="bg-white/30 rounded-xl p-2 border border-gray-600">
-              <h3 className="text-xl font-bold italic text-white font-montserrat mb-2" style={{textShadow: '3px 3px 8px rgba(0,0,0,0.8), 1px 1px 3px rgba(0,0,0,0.9)'}}>Soal: Bantu Toba Kembalikan Ikan dengan CSS</h3>
-              <p className="text-lg mb-6 text-white font-montserrat" style={{textShadow: '2px 2px 6px rgba(0,0,0,0.7), 1px 1px 2px rgba(0,0,0,0.8)'}}>Lengkapilah kode CSS berikut agar elemen ikan (.fish) berada di dalam sungai (.river), tepat di tengah horizontal dan dekat bagian bawah air.</p>
+            <div className="bg-white/30 rounded-xl p-3 lg:p-4 border border-gray-600">
+              <h3 className="text-lg lg:text-xl font-bold italic text-white font-montserrat mb-2" style={{textShadow: '3px 3px 8px rgba(0,0,0,0.8), 1px 1px 3px rgba(0,0,0,0.9)'}}>Soal: Bantu Toba Kembalikan Ikan dengan CSS</h3>
+              <p className="text-sm sm:text-base lg:text-lg mb-4 lg:mb-6 text-white font-montserrat" style={{textShadow: '2px 2px 6px rgba(0,0,0,0.7), 1px 1px 2px rgba(0,0,0,0.8)'}}>Lengkapilah kode CSS berikut agar elemen ikan (.fish) berada di dalam sungai (.river), tepat di tengah horizontal dan dekat bagian bawah air.</p>
               
-              {/* CSS Code and Visual - Two Columns */}
-              <div className="flex gap-6 mb-6">
-                {/* CSS Code - Left Side */}
-                <div className="w-1/2 bg-gray-700 rounded-lg p-4">
-                  <pre className="text-white text-sm font-mono leading-relaxed">
+              {/* CSS Code and Visual - Responsive Layout */}
+              <div className="flex flex-col lg:flex-row gap-4 lg:gap-6 mb-4 lg:mb-6">
+                {/* CSS Code - Mobile: Full Width, Desktop: Left Side */}
+                <div className="w-full lg:w-1/2 bg-gray-700 rounded-lg p-3 lg:p-4">
+                  <pre className="text-white text-xs sm:text-sm font-mono leading-relaxed overflow-x-auto">
 {`.river {
   position: relative;
   height: 220px;
@@ -344,8 +344,8 @@ const Quiz = () => {
                   </pre>
                 </div>
                 
-                {/* Visual Representation - Right Side */}
-                <div className="w-1/2 bg-white/50 rounded-lg flex items-center justify-center relative overflow-hidden">
+                {/* Visual Representation - Mobile: Below Code, Desktop: Right Side */}
+                <div className="w-full lg:w-1/2 bg-white/50 rounded-lg flex items-center justify-center relative overflow-hidden h-48 lg:h-auto">
                   {/* Ombak Image - Always visible, zoomed out */}
                   <img 
                     src={OmbakImage} 
@@ -365,13 +365,13 @@ const Quiz = () => {
                 </div>
               </div>
               
-              {/* Answer Options - Horizontal */}
-              <div className="flex gap-4">
+              {/* Answer Options - Responsive Grid */}
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                 {['top: 0;', 'bottom: 0;', 'margin-bottom: 0;'].map((option, index) => (
                   <button 
                     key={index}
                     onClick={() => handleAnswerSelect('section-4', option)}
-                    className={`flex-1 font-medium py-3 px-6 rounded-lg text-center transition-all duration-300 transform hover:scale-105 hover:shadow-lg ${getAnswerButtonStyle('section-4', option)}`}
+                    className={`flex-1 font-medium py-3 px-4 sm:px-6 rounded-lg text-center transition-all duration-300 transform hover:scale-105 hover:shadow-lg text-sm lg:text-base ${getAnswerButtonStyle('section-4', option)}`}
                     style={{textShadow: '2px 2px 6px rgba(0,0,0,0.7), 1px 1px 2px rgba(0,0,0,0.8)'}}
                   >
                     {option}
@@ -386,7 +386,7 @@ const Quiz = () => {
       {/* Section 5 - Princess */}
       <section 
         id="section-5"
-        className="quiz-section h-screen flex items-center justify-end relative transition-all duration-1000"
+        className="quiz-section min-h-screen flex items-center justify-center lg:justify-end relative transition-all duration-1000 py-8 lg:py-0"
       >
         {/* Background Image - Full Screen */}
         <div 
@@ -396,31 +396,31 @@ const Quiz = () => {
           }}
         ></div>
         
-        {/* Content Box - Overlay Right Side */}
-        <div className="relative z-10 w-1/2 mx-10 h-full flex items-center justify-center">
-          <div className={`bg-black/30 backdrop-blur-sm rounded-xl p-6 text-white transition-all duration-1000 transform w-full ${
+        {/* Content Box - Responsive Overlay */}
+        <div className="relative z-10 w-full lg:w-1/2 mx-4 lg:mx-10 h-full flex items-center justify-center px-4 lg:px-0">
+          <div className={`bg-black/30 backdrop-blur-sm rounded-xl p-4 lg:p-6 text-white transition-all duration-1000 transform w-full max-w-4xl ${
             visibleSections.has('section-5') ? 'animate-fadeInUp opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}>
-            <h2 className="text-4xl md:text-3xl font-bold mb-4 text-white">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 lg:mb-4 text-white">
               Ikan Berubah Jadi Wanita
             </h2>
-            <p className="text-lg md:text-xl mb-10 leading-relaxed text-white">
+            <p className="text-sm sm:text-base lg:text-lg xl:text-xl mb-6 lg:mb-10 leading-relaxed text-white">
               Toba terkejut karena tiba-tiba ikan tersebut berubah menjadi seorang wanita yang sangat cantik. "Jangan takut Pak, aku tidak akan menyakiti kamu," kata si ikan. "Siapakah kamu ini? Bukankah kamu seekor ikan?" tanya Toba. "Aku adalah seorang putri yang dikutuk, karena melanggar aturan kerajaan," jawab Wanita itu. "Terima kasih engkau sudah membebaskan aku dari kutukan itu. Sebagai imbalannya, aku bersedia kau jadikan istri," kata Wanita itu. Tanpa pikir lama, petani itu pun mengangguk. Namun, wanita ini mensyaratkan satu permintaan: "Kamu berjanji tidak boleh menceritakan asal-usul saya yang berasal dari seekor ikan."
             </p>
             
             {/* Quiz Section */}
-            <div className="bg-white/30 rounded-xl p-2 border border-gray-600">
-              <h3 className="text-xl font-bold italic text-white font-montserrat mb-2" style={{textShadow: '3px 3px 8px rgba(0,0,0,0.8), 1px 1px 3px rgba(0,0,0,0.9)'}}>Soal: Formulir Pernikahan</h3>
-              <p className="text-lg mb-6 text-white font-montserrat" style={{textShadow: '2px 2px 6px rgba(0,0,0,0.7), 1px 1px 2px rgba(0,0,0,0.8)'}}>Tag HTML apa yang digunakan untuk membuat formulir tempat Toba menuliskan janjinya?</p>
+            <div className="bg-white/30 rounded-xl p-3 lg:p-4 border border-gray-600">
+              <h3 className="text-lg lg:text-xl font-bold italic text-white font-montserrat mb-2" style={{textShadow: '3px 3px 8px rgba(0,0,0,0.8), 1px 1px 3px rgba(0,0,0,0.9)'}}>Soal: Formulir Pernikahan</h3>
+              <p className="text-sm sm:text-base lg:text-lg mb-4 lg:mb-6 text-white font-montserrat" style={{textShadow: '2px 2px 6px rgba(0,0,0,0.7), 1px 1px 2px rgba(0,0,0,0.8)'}}>Tag HTML apa yang digunakan untuk membuat formulir tempat Toba menuliskan janjinya?</p>
               
-              <div className="flex gap-6 items-stretch">
-                {/* Answer Options - Left Side */}
-                <div className="w-full space-y-7">
+              <div className="flex gap-4 lg:gap-6 items-stretch">
+                {/* Answer Options - Full Width */}
+                <div className="w-full space-y-4 lg:space-y-7">
                   {['<form>', '<fieldset>', '<legend>'].map((option, index) => (
                     <button 
                       key={index}
                       onClick={() => handleAnswerSelect('section-5', option)}
-                      className={`w-full font-medium py-6 rounded-lg text-center transition-all duration-300 transform hover:scale-105 hover:shadow-lg ${getAnswerButtonStyle('section-5', option)}`}
+                      className={`w-full font-medium py-4 lg:py-6 rounded-lg text-center transition-all duration-300 transform hover:scale-105 hover:shadow-lg text-sm lg:text-base ${getAnswerButtonStyle('section-5', option)}`}
                       style={{textShadow: '2px 2px 6px rgba(0,0,0,0.7), 1px 1px 2px rgba(0,0,0,0.8)'}}
                     >
                       {option}
@@ -436,7 +436,7 @@ const Quiz = () => {
       {/* Section 6 - Family */}
       <section 
         id="section-6"
-        className="quiz-section h-screen flex items-center justify-start relative transition-all duration-1000"
+        className="quiz-section min-h-screen flex items-center justify-center lg:justify-start relative transition-all duration-1000 py-8 lg:py-0"
       >
         {/* Background Image - Full Screen */}
         <div 
@@ -447,31 +447,31 @@ const Quiz = () => {
           }}
         ></div>
         
-        {/* Content Box - Overlay Left Side */}
-        <div className="relative z-10 w-1/2 mx-10 h-full flex items-center justify-center">
-          <div className={`bg-black/30 backdrop-blur-sm rounded-xl p-6 text-white transition-all duration-1000 transform w-full ${
+        {/* Content Box - Responsive Overlay */}
+        <div className="relative z-10 w-full lg:w-1/2 mx-4 lg:mx-10 h-full flex items-center justify-center px-4 lg:px-0">
+          <div className={`bg-black/30 backdrop-blur-sm rounded-xl p-4 lg:p-6 text-white transition-all duration-1000 transform w-full max-w-4xl ${
             visibleSections.has('section-6') ? 'animate-fadeInUp opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}>
-            <h2 className="text-4xl md:text-3xl font-bold mb-4 text-white">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 lg:mb-4 text-white">
               Kelahiran Samosir dan Kebiasaannya
             </h2>
-            <p className="text-lg md:text-xl mb-10 leading-relaxed text-white">
+            <p className="text-sm sm:text-base lg:text-lg xl:text-xl mb-6 lg:mb-10 leading-relaxed text-white">
               Setelah beberapa tahun menikah, kebahagiaan Toba bertambah karena sang istri telah melahirkan seorang anak laki-laki yang diberi nama Samosir. Anak mereka tumbuh menjadi anak yang sangat tampan dan kuat, tetapi ada kebiasaan yang membuat heran orang-orang: Samosir selalu merasa lapar dan tidak pernah merasa kenyang.
             </p>
             
             {/* Quiz Section */}
-            <div className="bg-white/30 rounded-xl p-2 border border-gray-600">
-              <h3 className="text-xl font-bold italic text-white font-montserrat mb-2" style={{textShadow: '3px 3px 8px rgba(0,0,0,0.8), 1px 1px 3px rgba(0,0,0,0.9)'}}>Soal: Bantu Samosir Atur Lapar dengan JS</h3>
-              <p className="text-lg mb-6 text-white font-montserrat" style={{textShadow: '2px 2px 6px rgba(0,0,0,0.7), 1px 1px 2px rgba(0,0,0,0.8)'}}>Jika setInterval() digunakan untuk membuat Samosir selalu lapar, maka fungsi JavaScript apa yang digunakan untuk menahan lapar (menghentikan interval)?</p>
+            <div className="bg-white/30 rounded-xl p-3 lg:p-4 border border-gray-600">
+              <h3 className="text-lg lg:text-xl font-bold italic text-white font-montserrat mb-2" style={{textShadow: '3px 3px 8px rgba(0,0,0,0.8), 1px 1px 3px rgba(0,0,0,0.9)'}}>Soal: Bantu Samosir Atur Lapar dengan JS</h3>
+              <p className="text-sm sm:text-base lg:text-lg mb-4 lg:mb-6 text-white font-montserrat" style={{textShadow: '2px 2px 6px rgba(0,0,0,0.7), 1px 1px 2px rgba(0,0,0,0.8)'}}>Jika setInterval() digunakan untuk membuat Samosir selalu lapar, maka fungsi JavaScript apa yang digunakan untuk menahan lapar (menghentikan interval)?</p>
               
-              <div className="flex gap-6 items-stretch">
-                {/* Answer Options - Left Side */}
-                <div className="w-full space-y-7">
+              <div className="flex gap-4 lg:gap-6 items-stretch">
+                {/* Answer Options - Full Width */}
+                <div className="w-full space-y-4 lg:space-y-7">
                   {['setTimeout()', 'clearInterval()', 'stopInterval()'].map((option, index) => (
                     <button 
                       key={index}
                       onClick={() => handleAnswerSelect('section-6', option)}
-                      className={`w-full font-medium py-6 rounded-lg text-center transition-all duration-300 transform hover:scale-105 hover:shadow-lg ${getAnswerButtonStyle('section-6', option)}`}
+                      className={`w-full font-medium py-4 lg:py-6 rounded-lg text-center transition-all duration-300 transform hover:scale-105 hover:shadow-lg text-sm lg:text-base ${getAnswerButtonStyle('section-6', option)}`}
                       style={{textShadow: '2px 2px 6px rgba(0,0,0,0.7), 1px 1px 2px rgba(0,0,0,0.8)'}}
                     >
                       {option}
@@ -487,7 +487,7 @@ const Quiz = () => {
       {/* Section 7 - Sinking */}
       <section 
         id="section-7"
-        className="quiz-section h-screen flex items-center justify-end relative transition-all duration-1000"
+        className="quiz-section min-h-screen flex items-center justify-center lg:justify-end relative transition-all duration-1000 py-8 lg:py-0"
       >
         {/* Background Image - Full Screen */}
         <div 
@@ -497,31 +497,31 @@ const Quiz = () => {
           }}
         ></div>
         
-        {/* Content Box - Overlay Right Side */}
-        <div className="relative z-10 w-1/2 mx-10 h-full flex items-center justify-center">
-          <div className={`bg-black/30 backdrop-blur-sm rounded-xl p-6 text-white transition-all duration-1000 transform w-full ${
+        {/* Content Box - Responsive Overlay */}
+        <div className="relative z-10 w-full lg:w-1/2 mx-4 lg:mx-10 h-full flex items-center justify-center px-4 lg:px-0">
+          <div className={`bg-black/30 backdrop-blur-sm rounded-xl p-4 lg:p-6 text-white transition-all duration-1000 transform w-full max-w-4xl ${
             visibleSections.has('section-7') ? 'animate-fadeInUp opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}>
-            <h2 className="text-4xl md:text-3xl font-bold mb-4 text-white">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 lg:mb-4 text-white">
               Insiden Makanan, Pelanggaran, dan Pembentukan Danau Toba
             </h2>
-            <p className="text-lg md:text-xl mb-10 leading-relaxed text-white">
+            <p className="text-sm sm:text-base lg:text-lg xl:text-xl mb-6 lg:mb-10 leading-relaxed text-white">
               Hingga suatu hari, Samosir mendapat tugas mengantarkan makanan ke sawah, tapi dia memakannya habis. Toba marah: "Dasar anak ikan!" Seketika anak dan istrinya hilang, air menyembur membentuk Danau Toba.
             </p>
             
             {/* Quiz Section */}
-            <div className="bg-white/30 rounded-xl p-2 border border-gray-600">
-              <h3 className="text-xl font-bold italic text-white font-montserrat mb-2" style={{textShadow: '3px 3px 8px rgba(0,0,0,0.8), 1px 1px 3px rgba(0,0,0,0.9)'}}>Soal: Event Handling dalam HTML</h3>
-              <p className="text-lg mb-6 text-white font-montserrat" style={{textShadow: '2px 2px 6px rgba(0,0,0,0.7), 1px 1px 2px rgba(0,0,0,0.8)'}}>Ketika air menyembur dan membuat Danau Toba, kita ingin membuat sebuah peristiwa (event) di halaman web untuk menanganinya. Atribut HTML apa yang tepat digunakan untuk menangani sebuah klik (misalnya, saat pengguna menekan tombol "Tenggelam")?</p>
+            <div className="bg-white/30 rounded-xl p-3 lg:p-4 border border-gray-600">
+              <h3 className="text-lg lg:text-xl font-bold italic text-white font-montserrat mb-2" style={{textShadow: '3px 3px 8px rgba(0,0,0,0.8), 1px 1px 3px rgba(0,0,0,0.9)'}}>Soal: Event Handling dalam HTML</h3>
+              <p className="text-sm sm:text-base lg:text-lg mb-4 lg:mb-6 text-white font-montserrat" style={{textShadow: '2px 2px 6px rgba(0,0,0,0.7), 1px 1px 2px rgba(0,0,0,0.8)'}}>Ketika air menyembur dan membuat Danau Toba, kita ingin membuat sebuah peristiwa (event) di halaman web untuk menanganinya. Atribut HTML apa yang tepat digunakan untuk menangani sebuah klik (misalnya, saat pengguna menekan tombol "Tenggelam")?</p>
               
-              <div className="flex gap-6 items-stretch">
-                {/* Answer Options - Left Side */}
-                <div className="w-full space-y-7">
+              <div className="flex gap-4 lg:gap-6 items-stretch">
+                {/* Answer Options - Full Width */}
+                <div className="w-full space-y-4 lg:space-y-7">
                   {['onclick', 'onload', 'onchange'].map((option, index) => (
                     <button 
                       key={index}
                       onClick={() => handleAnswerSelect('section-7', option)}
-                      className={`w-full font-medium py-6 rounded-lg text-center transition-all duration-300 transform hover:scale-105 hover:shadow-lg ${getAnswerButtonStyle('section-7', option)}`}
+                      className={`w-full font-medium py-4 lg:py-6 rounded-lg text-center transition-all duration-300 transform hover:scale-105 hover:shadow-lg text-sm lg:text-base ${getAnswerButtonStyle('section-7', option)}`}
                       style={{textShadow: '2px 2px 6px rgba(0,0,0,0.7), 1px 1px 2px rgba(0,0,0,0.8)'}}
                     >
                       {option}
@@ -537,22 +537,22 @@ const Quiz = () => {
       {/* Section 8 - Final */}
       <section 
         id="section-8"
-        className="quiz-section h-screen bg-cover bg-center bg-no-repeat flex flex-col justify-end relative transition-all duration-1000"
+        className="quiz-section min-h-screen bg-cover bg-center bg-no-repeat flex flex-col justify-end relative transition-all duration-1000 py-8 lg:py-0"
         style={{ backgroundImage: `url(${Quiz8})` }}
       >
         <div className="absolute inset-0 bg-black/10 transition-opacity duration-1000"></div>
-        <div className="relative z-10 p-8 pb-16">
-          <div className="max-w-10xl mx-auto">
+        <div className="relative z-10 p-4 sm:p-6 lg:p-8 pb-8 lg:pb-16">
+          <div className="max-w-6xl mx-auto">
             <div className={` rounded-2xl text-white transition-all duration-1000 transform ${
               visibleSections.has('section-8') ? 'animate-fadeInUp opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
             }`}>
-                <p className="text-lg md:text-2xl leading-relaxed text-center text-white font-montserrat font-medium italic" style={{textShadow: '2px 2px 6px rgba(0,0,0,0.7), 1px 1px 2px rgba(0,0,0,0.8)'}}>
+                <p className="text-sm sm:text-base lg:text-lg xl:text-2xl leading-relaxed text-center text-white font-montserrat font-medium italic px-4" style={{textShadow: '2px 2px 6px rgba(0,0,0,0.7), 1px 1px 2px rgba(0,0,0,0.8)'}}>
                   Cerita Legenda Danau Toba mengajarkan pentingnya menepati janji, mematuhi orang tua, menghormati hak orang lain, dan mengendalikan amarah, seperti ditunjukkan oleh perjalanan Toba dan Samosir yang berujung pada pembentukan Danau Toba. Dengan coding, nilai-nilai ini dapat diwujudkan melalui aplikasi untuk pelestarian lingkungan dan budaya, menciptakan dampak positif untuk masa depan.
                 </p>
-              <div className="mt-8 text-center">
+              <div className="mt-6 lg:mt-8 text-center">
                 <Link
                     to="/"
-                    className="group inline-block px-14 py-3 border-2 border-white text-white font-bold rounded-xl hover:bg-white/40 transition-all duration-300 hover:scale-105 relative overflow-hidden"
+                    className="group inline-block px-8 sm:px-12 lg:px-14 py-3 border-2 border-white text-white font-bold rounded-xl hover:bg-white/40 transition-all duration-300 hover:scale-105 relative overflow-hidden text-sm sm:text-base"
                     >
                     <span className="relative z-10">Kembali ke Beranda</span>
                     <div className="absolute inset-0 bg-black/40 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
@@ -568,4 +568,3 @@ const Quiz = () => {
 };
 
 export default Quiz;
-
