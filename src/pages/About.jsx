@@ -2,29 +2,32 @@ import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import cerahBg from '../assets/img/Background/cerah.png';
 import darkCompBg from '../assets/img/Background/dark-computer.png';
+import digitalFolkloreLogo from '../assets/img/Logo/digital-floklore.png';
+import gemaImage from '../assets/img/Team/Gema.png';
+import fariedImage from '../assets/img/Team/Faried.png';
+import izhharImage from '../assets/img/Team/Izhhar.png';
 
 // Team data
 const teamMembers = [
   {
     name: "Gema Hafizh Maulidi",
     role: "Developer", 
-    image: "/src/assets/img/Team/Gema.png",
+    image: gemaImage,
     description: "Mahasiswa Teknik Informatika Politeknik Negeri Jakarta",
     linkedin: "https://www.linkedin.com/in/gemahafizh/"
   },
   {
     name: "Muhamad Faried",
     role: "Developer",
-    image: "/src/assets/img/Team/Faried.png",
+    image: fariedImage,
     description: "Mahasiswa Teknik Informatika Politeknik Negeri Jakarta",
     linkedin: "https://www.linkedin.com/in/muhamadfaried/"
   },
   {
     name: "Muhammad Izhhar Farhan",
     role: "Designer & Developer",
-    image: "/src/assets/img/Team/Izhhar.png", 
+    image: izhharImage, 
     description: "Mahasiswa Teknik Informatika Politeknik Negeri Jakarta",
-
     linkedin: "https://www.linkedin.com/in/muhammadizhharfarhan/"
   }
 ];
@@ -118,7 +121,7 @@ function About() {
             <div className="scroll-animate flex items-center justify-end h-full">
               <div className="w-full max-w-md flex items-center justify-end">
                 <img 
-                  src="/src/assets/img/Logo/digital-floklore.png" 
+                  src={digitalFolkloreLogo} 
                   alt="Digital Folklore Logo"
                   className="max-w-full max-h-full object-contain rounded-xl"
                 />
