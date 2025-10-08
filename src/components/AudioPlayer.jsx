@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
-import Wintersong from '../Assets/music/Wintersong.mp3';
+import Wintersong from '../assets/music/Wintersong.mp3';
 
 function AudioPlayer() {
   const audioRef = useRef(null);
