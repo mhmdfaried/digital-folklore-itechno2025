@@ -1,19 +1,19 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Quiz1 from '../Assets/img/Background/toba-large-image.jpg';
-import Quiz2 from '../Assets/img/Background/mancing-large-image.jpg';
-import Quiz3 from '../Assets/img/Background/fish-large-image.jpg';
-import Quiz4 from '../Assets/img/Background/fish-talk-large-image.png';
-import Quiz5 from '../Assets/img/Background/putri-large-image.jpg';
-import Quiz6 from '../Assets/img/Background/family-large-image.jpg';
-import Quiz7 from '../Assets/img/Background/tenggelam-large-image.jpg';
-import Quiz8 from '../Assets/img/Background/final-large-image.png';
-import RumahImage from '../Assets/img/Quiz/rumah-image.png';
-import RumahImageGray from '../Assets/img/Quiz/rumah-image-gray.png';
-import PancinganImage from '../Assets/img/Quiz/pancingan-image.png';
-import PancinganImageGray from '../Assets/img/Quiz/pancingan-image-gray.png';
-import OmbakImage from '../Assets/img/Character/ombak-image.png';
-import IkanMasImage from '../Assets/img/Character/ikan-mas-image.png';
+import Quiz1 from '../assets/img/Background/toba-large-image.jpg';
+import Quiz2 from '../assets/img/Background/mancing-large-image.jpg';
+import Quiz3 from '../assets/img/Background/fish-large-image.jpg';
+import Quiz4 from '../assets/img/Background/fish-talk-large-image.png';
+import Quiz5 from '../assets/img/Background/putri-large-image.jpg';
+import Quiz6 from '../assets/img/Background/family-large-image.jpg';
+import Quiz7 from '../assets/img/Background/tenggelam-large-image.jpg';
+import Quiz8 from '../assets/img/Background/final-large-image.png';
+import RumahImage from '../assets/img/Quiz/rumah-image.png';
+import RumahImageGray from '../assets/img/Quiz/rumah-image-gray.png';
+import PancinganImage from '../assets/img/Quiz/pancingan-image.png';
+import PancinganImageGray from '../assets/img/Quiz/pancingan-image-gray.png';
+import OmbakImage from '../assets/img/Character/ombak-image.png';
+import IkanMasImage from '../assets/img/Character/ikan-mas-image.png';
 
 const Quiz = () => {
   const [visibleSections, setVisibleSections] = useState(new Set());
